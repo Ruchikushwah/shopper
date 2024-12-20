@@ -11,6 +11,6 @@ const  Category1Schema = new mongoose.Schema({
     timestamps:true
 })
 
-delete mongoose.models.Category1
- const Category1= mongoose.models.Category1 || mongoose.model("Category1",Category1Schema);
- export default Category1;
+//delete mongoose.models.Category1
+ export default mongoose.models.Category1 || mongoose.model("Category1",Category1Schema);
+ 

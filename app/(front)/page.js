@@ -4,12 +4,14 @@ import { Banner } from './components/banner'
 import { CategoriesList } from './components/categories-list'
 import ProductSection from './product-section'
 import DbConnect from '@/utils/dbConnect'
-import category1 from '@/models/category1'
+import Category1 from '@/models/Category1'
+
 
 
 const page =  async() => {
   DbConnect();
-  let categories = await category1.find({});
+  let categories = await Category1.find({});
+  
   return (
     <div>
    
@@ -19,7 +21,7 @@ const page =  async() => {
           <CategoriesList   data={categories}/>
         </div>
         <div className='w-9/12 '>
-          <ProductSection/>
+          <ProductSection />
         </div>
       </div>
       

@@ -1,22 +1,26 @@
 "use client"
 
+import Category1 from "@/models/Category1"
 import { CategoriesList } from "../../components/categories-list"
 import Heading from "../../components/heading"
 import ProductSection from "../../product-section"
 
-const page = ({params}) => {
+const page =  async({params}) => {
   const {category_slug}=params;
+  let categoriesDetails = await Category1.findById(ategory_slug)
+  let categories = await Category1.find({});
+
   return (
     <div>
-      <Heading color="bg-orange-700" title={category_slug} subtitle="total 0 products found"/>
+      <Heading color="bg-orange-700" title={`your search term "$(categoriesDetails.cat_title}"`} subtitle="total 0 products found"/>
    
       
       <div className='flex flex-1 px-[5%] my-5 gap-20'>
         <div className='w-3/12 py-5'>
-          <CategoriesList/>
+          <CategoriesList data={categories}/>
         </div>
         <div className='w-9/12 '>
-          <ProductSection/>
+          <ProductSection searchTerm ={category_slug}/>
         </div>
       </div>
       

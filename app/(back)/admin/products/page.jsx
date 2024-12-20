@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProductCalling } from './_components/productCalling'
 
-import products from '@/models/products'
+import products from '@/models/Product'
 import Link from 'next/link';
 
 const page = async () => {

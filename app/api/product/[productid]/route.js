@@ -1,4 +1,4 @@
-import products from "@/models/products";
+import products from "@/models/Product";
 import DbConnect from "@/utils/dbConnect";
 import { NextResponse } from "next/server";
 

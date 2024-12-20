@@ -1,7 +1,7 @@
 import DbConnect from "@/utils/dbConnect";
 import { ProductForm } from "../_components/productform";
 import { redirect } from "next/navigation";
-import products from "@/models/products";
+import products from "@/models/Product";
 import slugify from "slugify";
 
 

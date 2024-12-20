@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import DbConnect from '@/utils/dbConnect'
 import { CategoryCalling } from './create/_components/categoryCalling'
-import category1 from '@/models/category1'
+import category1 from '@/models/Category1'
 
 
 const page = async() => {

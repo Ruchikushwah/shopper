@@ -1,7 +1,7 @@
 import DbConnect from '@/utils/dbConnect'
 import { CategoryForm } from './_components/categoryform';
 import { redirect } from 'next/navigation';
-import category1 from '@/models/category1';
+import category1 from '@/models/Category1';
 
 
 
